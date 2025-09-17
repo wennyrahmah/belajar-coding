@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrasi Perpustakaan</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Registrasi Perpustakaan</h1>
+        <p id="description">Selamat Datang di Perpustakaan Bung Hatta<br>Silahkan isi terlebih dahulu formulir berikut</p>
+        <form id="survey-form" method="post" action="#">
+            <fieldset>
+                <label for="name">Nama<input id="name" type="text" name="name" required/></label>
+
+            </fieldset>
+            <fieldset>
+                <label for="email">Email<input id="email" type="email" name="email" required/></label>
+            </fieldset>
+            <fieldset>
+                <label for="number">Umur<input id="number" type="number" name="number" min="5" max="100" required/></label>
+            </fieldset>
+            <fieldset>
+                <legend for="kelamin">Jenis Kelamin</legend>
+                <label for="kelamin"><input id="kelamin" type="radio" name="kelamin" class="inline" checked/>Perempuan</label>
+                <label for="kelamin"><input id="kelamin" type="radio" name="kelamin" class="inline" />Laki-Laki</label>
+            </fieldset>
+            <fieldset>
+                <label for="pendidikan">Pendidikan</label>
+                <select id="pendidikan" name="pendidikan">
+                <option value="">Pilih Salah Satu</option>
+                <option value="1">TK/SD</option>
+                <option value="2">SMP</option>
+                <option value="3">SMA</option>
+                <option value="4">S1/D4</option>
+                <option value="5">S2</option>
+                <option value="6">S3</option>
+                <option value="7">D1</option>
+                <option value="8">D2</option>
+                <option value="9">D3</option>
+                <option value="10">lainnya</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Genre Buku Favorit</legend>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Horror</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Self Improvement</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Misteri</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Fantasi</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Ilmu Pengetahuan</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Sejarah</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Sci-fi</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Buku Anak</label><br>
+                <label for="buku"><input class="inline" id="buku" type="checkbox" name="buku"/>Lainnya</label><br>
+                
+            </fieldset>
+            <fieldset>Saran dan Masukan:
+                <label for="saran"><textarea id="saran" name="saran" rows="3" cols="60" placeholder="Silahkan ceritakan pengalaman Anda disini..."></textarea> </label>
+            </fieldset>
+            
+            <input type="submit" value="Submit"
+        </form>
+    </body>
+</html>
